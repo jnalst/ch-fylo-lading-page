@@ -1,0 +1,186 @@
+.profile-bg {
+  background-image: url(/images/bg-curve-desktop\ 1.svg);
+  background-repeat: no-repeat;
+  box-shadow: inset 0 -60rem #f8f8fe;
+}
+
+.profile {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  transition: all 0.5s;
+  gap: 1rem;
+  padding-top: 15rem;
+  padding-bottom: 8rem;
+  padding-inline: 2rem;
+}
+
+.profile-text h2 {
+  font-size: 3.8rem;
+  font-family: "Raleway";
+  font-weight: 700;
+  color: var(--vDarkBlue);
+  transition: all 0.5s;
+  padding-bottom: 2rem;
+}
+
+.profile-text > p {
+  font-family: "Open Sans";
+  font-size: 1.6rem;
+  color: var(--vDarkBlue);
+  padding-bottom: 2rem;
+  transition: all 0.5s;
+  max-width: 58ch;
+}
+
+.profile-text .link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--modeCyan);
+  font-family: "Raleway";
+  font-weight: 700;
+  padding-bottom: 4rem;
+  position: relative;
+  transition: all 0.5s;
+}
+
+.profile-text .link:hover{
+  color: #65b9ab;
+}
+
+.profile-text .link::before {
+  content: "";
+  width: 14.6rem;
+  height: 0.2rem;
+  background-color: var(--modeCyan);
+  position: absolute;
+  top: 2.2rem;
+  left: 0rem;
+}
+
+.profile-text .link::before:hover{
+  background-color: #65b9ab;
+}
+
+.profile-box {
+  box-shadow: 0.1rem 0.1rem 2rem rgba(0, 0, 0, 0.144);
+  background-color: var(--w);
+  border-radius: 0.5rem;
+  padding-left: 4rem;
+  padding-top: 3rem;
+  width: 32rem;
+  padding-bottom: 3rem;
+}
+
+.profile-box > img {
+  width: 1.6rem;
+  padding-bottom: 1.6rem;
+}
+
+.profile-box > p{
+  font-family: "Open Sans";
+  font-size: 1.4rem;
+  color: var(--vDarkBlue);
+  transition: all 0.5s;
+  max-width: 37ch;
+  padding-bottom: 1.6rem;
+}
+
+.profile-box .avatar {
+display: flex;
+align-items: center;
+gap: 1.2rem;
+}
+
+.profile-box .avatar > img {
+  width: 3.2rem;
+  border-radius: 100%;
+}
+
+.profile-box .avatar-text {
+  display: grid;
+  gap: .1rem;
+}
+
+.profile-box .avatar-text h3{
+  font-family: "Raleway";
+  font-weight: 700;
+  color: var(--vDarkBlue);
+  transition: all 0.5s;
+  font-size: 1.4rem;
+}
+
+.profile-box .avatar-text p{
+  font-family: "Open Sans";
+  font-size: 1.2rem;
+  color: var(--vDarkBlue);
+}
+
+@media screen and (max-width: 1200px) {
+  .profile-text h2 {
+    font-size: 2.8rem;
+  }
+
+  .profile-text > p {
+    font-family: "Open Sans";
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .profile-text h2 {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .profile-bg {
+    background-image: url(/images/bg-curve-desktop\ 1.svg);
+    background-repeat: no-repeat;
+    box-shadow: inset 0 -128rem #f8f8fe;
+  }
+
+  .profile {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-img{
+    grid-row: 1;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .profile-text h2 {
+    text-align: center;
+  }
+
+  .profile-text .link {
+  justify-content: center;
+  }
+
+  .profile-text .link::before{
+    left: 11rem;
+  }
+
+  .profile-text{
+    display: grid;
+  }
+
+  .profile-box {
+    box-shadow: 0.1rem 0.1rem 2rem rgba(0, 0, 0, 0.144);
+    background-color: var(--w);
+    border-radius: 0.5rem;
+    padding-inline: 2rem;
+    padding-top: 3rem;
+    width: 28rem;
+    padding-bottom: 3rem;
+    justify-self: center;
+  }
+
+}
+
+@media screen and (max-width: 370px) {
+  .profile-text .link::before{
+    left: 9rem;
+  }
+}

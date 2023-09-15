@@ -1,0 +1,91 @@
+.footer-bg{
+  background-color: var(--vDarkBlue);
+}
+
+.footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
+
+.footer-logo {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.footer-logo a {
+  font-family: "Open Sans";
+  font-size: 1.6rem;
+  color: var(--w);
+}
+
+.footer-logo a img {
+  padding-right: 1.6rem;
+}
+
+.footer-botoes {
+  display: flex;
+  font-family: "Open Sans";
+  font-size: 1.6rem;
+  gap: 16rem;
+}
+
+.footer-botoes .f-botoes1 {
+  display: grid;
+  gap: 2rem;
+}
+
+.footer-botoes .f-botoes1 a{
+  color: var(--w);
+}
+
+.footer-botoes .f-botoes2 {
+  display: grid;
+}
+
+.footer-botoes .f-botoes2 a{
+  color: var(--w);
+}
+
+.footer-redes{
+  display: grid;
+  place-items: center;
+}
+
+.footer-redes ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-redes ul li img {
+  width: 2.6rem;
+}
+
+@media screen and (max-width:1000px) {
+  .footer{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.6rem;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+  }
+
+  .footer-botoes {
+    display: grid;
+    font-family: "Open Sans";
+    font-size: 1.6rem;
+    gap: 2.5rem;
+  }
+
+  .footer-botoes .f-botoes1 {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .footer-botoes .f-botoes2 {
+    display: grid;
+    gap: 1rem;
+  }
+  
+}

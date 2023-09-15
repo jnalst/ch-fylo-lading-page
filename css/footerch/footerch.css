@@ -1,0 +1,10 @@
+.attribution {
+  font-size: 16px;
+  text-align: center;
+  color: var(--w);
+  font-family: "Raleway";
+  padding-bottom: 1rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

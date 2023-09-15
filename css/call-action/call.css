@@ -1,0 +1,76 @@
+.call-bg{
+  background-color: var(--desaBlue);
+  padding-block: 8rem;
+}
+
+.call{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2rem;
+}
+
+.call-text h4 {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 2.8rem;
+  color: var(--w);
+  padding-bottom: 1.4rem;
+}
+
+.call-text p{
+  font-family: "Open Sans";
+  font-size: 1.6rem;
+  color: var(--w);
+  max-width: 55ch;
+}
+
+.call-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;;
+  justify-self: center end;
+}
+.call-form input{
+padding-block: 1rem;
+color: var(--lGray);
+border: 0.1rem solid #bfbfbf;
+border-radius: 0.5rem;
+transition: all 0.5s;
+}
+
+.call-form input[placeholder] {
+  padding-left: 2rem;
+}
+
+.call-form button {
+  font-family: "Raleway";
+  font-weight: 700;
+  padding-block: 1rem;
+  width: 20rem;
+  border-radius: 0.5rem;
+  background-color: var(--brightBlue);
+  color: var(--w);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.call-form button:hover{
+  background-color: #7694e6;
+  }
+
+@media screen and (max-width: 800px) {
+  .call{
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+
+  .call-text h4 {
+    text-align: center;
+  }
+
+  .call-text p{
+    text-align: center;
+  }
+}

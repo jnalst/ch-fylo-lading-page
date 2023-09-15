@@ -1,0 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
+@import "./global/global.css";
+@import "./header/header.css";
+@import "./intro/intro.css";
+@import "./profile/profile.css";
+@import "./call-action/call.css";
+@import "./footer/footer.css";
+@import "./footerch/footerch.css";

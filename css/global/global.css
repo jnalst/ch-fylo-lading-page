@@ -1,0 +1,68 @@
+:root {
+  /* 10 px = 1 rem */
+  font-size: 62.5%;
+
+  /* colorPrimary */
+  --vDarkBlue: #070439;
+  --desaBlue: #585989;
+
+  /* Accent */
+  --brightBlue: #3065f8;
+  --modeCyan: #3c9f8f;
+
+  /* Neutral */
+  --w: #ffffff;
+  --lGrayBlue:  #f6f6fe;
+  --lGray: #bfbfbf;
+}
+
+/* CSS RESET */
+
+html {
+  scroll-behavior: smooth;
+  transition: all .5s;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1.4rem;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding-inline: 2rem;
+  margin-inline: auto;
+}
+
+.container-action {
+  box-sizing: border-box;
+  max-width: 800px;
+  padding-inline: 2rem;
+  margin-inline: auto;
+}
+
+
+button {
+  border: none;
+  text-decoration: none;
+}
